@@ -1,0 +1,37 @@
+TC-Login-01 | PASS
+TC-Login-02 | FAIL | "Username field not accepting input"
+TC-Login-03 | PASS
+
+TC-AddToCart-01 | PASS
+TC-AddToCart-02 | FAIL | "Add to Cart button not clickable"
+TC-AddToCart-03 | FAIL | "Add to Cart button not clickable"
+TC-AddToCart-04 | PASS
+
+TC-RemoveItem-01 | PASS
+TC-RemoveItem-02 | PASS
+TC-RemoveItem-03 | FAIL | "Remove button is not visible"
+
+TC-Search-01 | PASS
+TC-Search-02 | FAIL | "Search results not updating"
+TC-Search-03 | PASS
+TC-Search-04 | PASS
+
+TC-Checkout-01 | FAIL | "Payment gateway timeout"
+TC-Checkout-02 | PASS
+TC-Checkout-03 | FAIL | "Payment gateway timeout"
+TC-Checkout-04 | FAIL | "Shipping address validation error"
+TC-Checkout-05 | FAIL | "Payment gateway timeout"
+
+TC-Profile-01 | PASS
+TC-Profile-02 | FAIL | "User profile not saving after update"
+TC-Profile-03 | FAIL | "User profile not saving after update"
+
+TC-Wishlist-01 | PASS
+TC-Wishlist-02 | PASS
+TC-Wishlist-03 | FAIL | "Add to Wishlist button not working"
+
+TC-Logout-01 | PASS
+
+TC-Notifications-01 | FAIL | "Unread notification badge not updating"
+TC-Notifications-02 | PASS
+TC-Notifications-03 | FAIL | "Unread notification badge not updating"
