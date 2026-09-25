@@ -1,0 +1,1 @@
+As a registered user I want to add a product to cart so that I can purchase it later
