@@ -1,0 +1,59 @@
+As a registered user
+I want to add an available product to my cart
+So that I can purchase it later
+
+Acceptance Criteria:
+
+1. Authentication requirement
+- Given the user is a registered user and logged in
+- When the user views a product that is available for purchase
+- Then the user can add that product to the cart
+
+2. Add to cart action
+- Given the user is on the product detail page
+- When the user clicks the “Add to Cart” button
+- Then the product is added to the user’s cart
+
+3. Default quantity
+- Given the user has not specified a quantity
+- When the product is added to the cart
+- Then 1 unit of the product is added by default
+
+4. Duplicate products in cart
+- Given the product is already present in the cart
+- When the user adds the same product again
+- Then the quantity of that product in the cart increases by 1 instead of creating a duplicate cart entry
+
+5. Product availability validation
+- Given a product is out of stock or unavailable
+- When the user attempts to add it to the cart
+- Then the system prevents the action
+- And displays a message such as “This product is currently unavailable”
+
+6. Success feedback
+- Given the product is successfully added to the cart
+- When the action completes
+- Then the user sees a confirmation message such as “Product added to cart”
+- And the cart item count is updated
+
+7. User experience after adding
+- Given the product is added successfully
+- When the operation completes
+- Then the user remains on the current page
+- And the product remains available for continued browsing or checkout
+
+8. Cart persistence
+- Given the user logs out and logs back in
+- When the user returns to the cart
+- Then the previously added products remain in the cart for that registered user
+
+9. Error handling
+- Given the cart update fails due to a server error or connectivity issue
+- When the user tries to add the product
+- Then the product is not added to the cart
+- And the user sees an error message explaining the failure
+
+10. Product selection
+- Given the product has variants such as size or color
+- When the user selects a valid variant and adds it to the cart
+- Then the selected variant is the one added to the cart
